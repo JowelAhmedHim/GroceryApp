@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.groceryapp"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GroceryApp">
+        <activity android:name=".Activity.Seller.RegisterSellerProfile"></activity>
+        <activity android:name=".Activity.Buyer.RegisterUserProfile" />
+        <activity android:name=".Activity.AddPromotionCodeActivity" />
+        <activity android:name=".Activity.PromotionCodesActivity" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".Activity.Seller.OrderDetailsSellerActivity" />
+        <activity android:name=".Activity.ShopReviewsActivity" />
+        <activity android:name=".Activity.Buyer.WriteReviewActivity" />
+        <activity android:name=".Activity.Buyer.OrderDetailsUserActivity" />
+        <activity android:name=".Activity.EditProductActivity" />
+        <activity android:name=".Activity.AddProductActivity" />
+        <activity android:name=".Activity.Buyer.EditUserActivity" />
+        <activity android:name=".Activity.ShopDetailsActivity"
+                  android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Activity.Seller.EditSellerAcitivity" />
+        <activity android:name=".Activity.Buyer.MainUserActivity" />
+        <activity android:name=".Activity.Seller.MainSellerActivity" />
+        <activity android:name=".Activity.Seller.RegisterSellerActivity" />
+        <activity android:name=".Activity.Buyer.RegisterUserActivity" />
+        <activity android:name=".ForgetPasswordActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".FireBaseMessaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

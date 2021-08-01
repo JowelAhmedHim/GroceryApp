@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.EditProductActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Product"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/product_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_local_grocery_store_24"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp" />
+
+            <ImageButton
+                android:id="@+id/changeProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_baseline_photo_camera_24"
+                android:background="@null"
+                android:layout_alignEnd="@+id/product_image"
+                android:layout_alignBottom="@+id/product_image"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <EditText
+            android:id="@+id/productTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_shape"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:inputType="textCapSentences"
+            android:hint="Product Name"
+            android:textColorHint="@color/black"
+            android:drawableStart="@drawable/ic_baseline_text_fields_24"
+            android:drawablePadding="5dp"/>
+        <EditText
+            android:id="@+id/productDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_shape"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:inputType="textCapSentences|textMultiLine"
+            android:hint="Description"
+            android:textColorHint="@color/black"
+            android:drawableStart="@drawable/ic_baseline_text_fields_24"
+            android:drawablePadding="5dp"/>
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_shape"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColorHint="@color/black"
+            android:hint="Category"
+            android:drawablePadding="5dp"
+            app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_down_24"
+            app:drawableStartCompat="@drawable/ic_baseline_category_24" />
+        <EditText
+            android:id="@+id/productQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_shape"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:inputType="text"
+            android:hint="Quantity"
+            android:textColorHint="@color/black"
+            android:drawableStart="@drawable/ic_baseline_exposure_24"
+            android:drawablePadding="5dp"/>
+        <EditText
+            android:id="@+id/productPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_shape"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:inputType="number"
+            android:hint="Price"
+            android:textColorHint="@color/black"
+            android:drawableStart="@drawable/ic_baseline_attach_money_24"
+            android:drawablePadding="5dp"/>
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/discountSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Discount"/>
+        <EditText
+            android:id="@+id/discountPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_shape"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:inputType="number"
+            android:hint="Discount Price"
+            android:textColorHint="@color/black"
+            android:drawableStart="@drawable/ic_baseline_attach_money_24"
+            android:drawablePadding="5dp"/>
+        <EditText
+            android:id="@+id/discountNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_shape"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:inputType="number"
+            android:hint="Discount Node E.g. 10% off"
+            android:textColorHint="@color/black"
+            android:drawableStart="@drawable/ic_baseline_attach_money_24"
+            android:drawablePadding="5dp"/>
+        <Button
+            android:id="@+id/addProduct"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="Add Product"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

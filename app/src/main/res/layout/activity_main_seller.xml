@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Seller.MainSellerActivity">
+
+    <!--Toolbar-->
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Dashboard"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/ic_baseline_dashboard_24"
+            android:drawableTint="@color/white"
+            android:drawablePadding="5dp"
+            android:textSize="25sp"/>
+
+        <!-- More Option button-->
+        <ImageButton
+            android:id="@+id/moreBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            android:tint="@color/white"
+            android:background="@null"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+        <!-- Edit profile button-->
+        <ImageButton
+            android:id="@+id/editProfile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:tint="@color/white"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/moreBtn"/>
+
+        <!-- Add product button-->
+        <ImageButton
+            android:id="@+id/addProductBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_add_shopping_cart_24"
+            android:tint="@color/white"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/editProfile"/>
+
+    </RelativeLayout>
+
+    <!-- Seller profile Layout-->
+    <RelativeLayout
+        android:id="@+id/sellerProfileRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:padding="10dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_person_24"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/profile_image"
+            android:layout_centerInParent="true"
+            android:paddingLeft="10dp">
+            <TextView
+                android:id="@+id/shopName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JowelShop"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="serif"/>
+            <TextView
+                android:id="@+id/sellerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shopName"
+                android:text="JowelAhmedHim"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="@font/antic"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/shopEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sellerName"
+                android:text="JowelAhmedHim@gmail.com"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:fontFamily="@font/antic"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/verifyTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/shopEmail"
+                android:layout_alignBottom="@+id/shopEmail"
+                android:text="Not verified"
+                android:visibility="gone"
+                android:fontFamily="@font/antic"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/shape_rec6"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sellerProfileRl"
+        android:background="@color/colorPrimary"
+        app:tabTextAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        app:tabTextColor="@color/Gray"
+        app:tabSelectedTextColor="@color/white"
+        app:tabIndicatorColor="@color/white"
+        app:tabIndicatorAnimationMode="linear"
+        app:tabIndicatorHeight="4dp"
+        app:tabIconTint="@color/white"
+        app:tabGravity="fill" />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabLayout"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:paddingBottom="50dp"/>
+
+</RelativeLayout>
