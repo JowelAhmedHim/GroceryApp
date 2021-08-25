@@ -41,35 +41,37 @@ Seller:
 
 ## Screenshots
 
-   [<img src="https://user-images.githubusercontent.com/82113036/123310251-b3bf8700-d547-11eb-9f84-2b636c43090f.png" align="center"
+
+   [<img src="https://user-images.githubusercontent.com/82113036/130836643-86b4b918-9c40-483f-b23e-8300677eead2.png" align="center"
 width="200"
     hspace="10" vspace="10">](/readme/Wallabag%20Article%20View.png)
-   [<img src="https://user-images.githubusercontent.com/82113036/123310254-b4f0b400-d547-11eb-943b-f405dd77ada1.png" align="center"
-width="200"
-    hspace="10" vspace="10">](/readme/Wallabag%20Article%20View.png)
-   [<img src="https://user-images.githubusercontent.com/82113036/123310256-b621e100-d547-11eb-8e1d-e6d377f49e47.png" align="center"
+   [<img src="https://user-images.githubusercontent.com/82113036/130836649-78e67f8f-6bf4-4d94-9569-2b00a0ec4f2e.png" align="center"
 width="200"
     hspace="10" vspace="10">](/readme/Wallabag%20Reading%20List.png)
-    
-   [<img src="https://user-images.githubusercontent.com/82113036/123310260-b6ba7780-d547-11eb-9700-b8c5ce97cfb0.png" align="center"
-width="200"
-    hspace="10" vspace="10">](/readme/Wallabag%20Article%20View.png)
-   [<img src="https://user-images.githubusercontent.com/82113036/123310261-b6ba7780-d547-11eb-9275-2e206aeb672b.png" align="center"
-width="200"
-    hspace="10" vspace="10">](/readme/Wallabag%20Article%20View.png)
-   [<img src="https://user-images.githubusercontent.com/82113036/123310265-b7eba480-d547-11eb-8cd4-73e0f16ee523.png" align="center"
+   [<img src="https://user-images.githubusercontent.com/82113036/130836668-5aaab45f-d285-490c-837a-dc5afb763b42.png" align="center"
 width="200"
     hspace="10" vspace="10">](/readme/Wallabag%20Article%20View.png)
     
-   [<img src="https://user-images.githubusercontent.com/82113036/123310266-b8843b00-d547-11eb-83ef-2b0fa6fa841e.png" align="center"
+    
+   [<img src="https://user-images.githubusercontent.com/82113036/130836676-afa5bc21-0092-4b1b-8b7f-142f408890fd.png" align="center"
 width="200"
     hspace="10" vspace="10">](/readme/Wallabag%20Article%20View.png)
-   [<img src="https://user-images.githubusercontent.com/82113036/123310271-b9b56800-d547-11eb-88ed-69f9a8c64b42.png" align="center"
+   [<img src="https://user-images.githubusercontent.com/82113036/130836677-52e9dc21-0e9e-4128-b7eb-59f00c67d729.png" align="center"
+width="200"
+    hspace="10" vspace="10">](/readme/Wallabag%20Article%20View.png)
+   [<img src="https://user-images.githubusercontent.com/82113036/130836679-1a823d27-6383-4ac8-8f80-645789e5ee43.png" align="center"
 width="200"
     hspace="10" vspace="10">](/readme/Wallabag%20Article%20View.png)
     [<img src="https://user-images.githubusercontent.com/82113036/123310276-bae69500-d547-11eb-9c95-2936a77efd4c.png" align="center"
 width="200"
     hspace="10" vspace="10">](/readme/Wallabag%20Article%20View.png)
+       [<img src="https://user-images.githubusercontent.com/82113036/130836655-f87f75a5-aa81-43e1-8930-b4cb9a063979.png" align="center"
+width="200"
+    hspace="10" vspace="10">](/readme/Wallabag%20Article%20View.png)
+       [<img src="https://user-images.githubusercontent.com/82113036/130836658-8c023a6b-4bba-4bb5-b0b0-5e4eb0bb8402.png" align="center"
+width="200"
+    hspace="10" vspace="10">](/readme/Wallabag%20Article%20View.png)
+    
     
 
 
